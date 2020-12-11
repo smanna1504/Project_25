@@ -8,7 +8,7 @@ class Paper{
 
 			
 			}
-        this.body = Bodies.circle(250,500,20,options);
+        this.body = Bodies.circle(250,490,20,options);
         this.image = loadImage("Images/paper.png");
         World.add(world, this.body);
     }
@@ -17,7 +17,7 @@ class Paper{
         var angle = this.body.angle;
         fill("white");
         rotate(angle);
-        imageMode(CENTER);
+        imageMode(RADIUS);
         image(this.image,pos.x,pos.y,33,33);
     }
 }

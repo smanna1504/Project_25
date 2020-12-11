@@ -4,7 +4,7 @@ class Ground{
             isStatic:true
         }
 
-this.body=Matter.Bodies.rectangle(600,525,1200,10,options);
+this.body=Matter.Bodies.rectangle(600,535,1200,10,options);
 this.width=1200;
 this.height=10;
 World.add(world,this.body);

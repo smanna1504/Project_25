@@ -18,18 +18,18 @@ function setup(){
     ground = new Ground();
     paper = new Paper();
 
-    bin = createSprite(964,445,20,20);
+    bin = createSprite(964,455,20,20);
     bin.addImage(binImg);
     bin.scale = 0.45;
 
-    binPart1 = new Dustbin(902,450,10,140);
-    binPart2 = new Dustbin(962,515,130,10);
-	binPart3 = new Dustbin(1024,450,10,140);
+    binPart1 = new Dustbin(902,460,10,140);
+    binPart2 = new Dustbin(962,525,130,10);
+	binPart3 = new Dustbin(1024,460,10,140);
 	
 }
 
 function draw(){
-    background(0);
+    background('white');
     Engine.update(engine);
     
     ground.display();
@@ -43,6 +43,6 @@ function draw(){
 
 function keyPressed(){
     if(keyCode === UP_ARROW){
-        Matter.Body.applyForce(paper.body,paper.body.position,{x:76,y:-77});
+        Matter.Body.applyForce(paper.body,paper.body.position,{x:71.5,y:-71.5});
     }
 }
